@@ -11,13 +11,13 @@ import {
   NavBtn,
   NavBtnLink
 } from "./Navbar.style";
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Ravi</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>

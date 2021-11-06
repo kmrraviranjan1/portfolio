@@ -9,18 +9,18 @@ import {
   SideBtnWrap,
   SidebarRoute,
 } from "./Sidebar.style";
-const Sidebar = () => {
+const Sidebar = ({isOpen,toggle}) => {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle} >
+      <Icon onClick={toggle}>
         <CloseIcon/>
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about">About</SidebarLink>
-          <SidebarLink to="skills">Skills</SidebarLink>
-          <SidebarLink to="project">Projects</SidebarLink>
-          <SidebarLink to="contact">Contact</SidebarLink>
+          <SidebarLink onClick={toggle} to="about">About</SidebarLink>
+          <SidebarLink onClick={toggle} to="skills">Skills</SidebarLink>
+          <SidebarLink onClick={toggle} to="project">Projects</SidebarLink>
+          <SidebarLink onClick={toggle} to="contact">Contact</SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
       <SideBtnWrap>
