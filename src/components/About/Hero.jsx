@@ -1,23 +1,56 @@
 import React from "react";
 import Type from "./Type";
-import { Wave } from "./About.style";
+import {
+  Container,
+  Main,
+  Follow,
+  Wave,
+  LinkContainer,
+  Icon,
+} from "./About.style";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 const Hero = () => {
   return (
-    <div>
-      <h1 style={{ paddingBottom: 15 }} className="heading">
-        Hi There!{" "}
-        <Wave role="img" aria-labelledby="wave">
-          👋🏻
-        </Wave>
-      </h1>
+    <Container>
+      <Main>
+        <h1>
+          Hi There!
+          <Wave role="img" aria-labelledby="wave">
+            👋🏻
+          </Wave>
+        </h1>
 
-      <h1 className="heading-name">
-        I'M
-        <strong className="main-name"> RAVI RANJAN KUMAR</strong>
-      </h1>
-      <Type />
-      <img src="assets/ravi.png" alt="" />
-    </div>
+        <h1 className="heading-name">
+          I'M
+          <strong className="main-name"> RAVI RANJAN KUMAR</strong>
+        </h1>
+        <Type />
+        <Follow>
+          <LinkContainer>
+            <Icon
+              href="https://www.linkedin.com/in/kmrraviranjan1/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin color="blue" />
+            </Icon>
+          </LinkContainer>
+          <LinkContainer>
+            <Icon
+              href="https://github.com/kmrraviranjan1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub color="black" />
+            </Icon>
+          </LinkContainer>
+        </Follow>
+      </Main>
+      <div>
+        <img src="assets/ravi.png" alt="" />
+      </div>
+    </Container>
   );
 };
 

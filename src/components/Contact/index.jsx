@@ -19,9 +19,9 @@ import {
 const Contact = () => {
   return (
     <ContactContainer>
-      <Form>
+      {/* <Form>
         
-      </Form>
+      </Form> */}
       <ContactWrapper>
         <ContactAt>
           <CLinkContainer>
