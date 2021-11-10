@@ -1,7 +1,7 @@
 import React from "react";
 import { FaPhoneAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail, SiHashnode, SiHackerrank } from "react-icons/si";
-
+import Form from './Form'
 import {
   ContactContainer,
   ContactWrapper,
@@ -19,6 +19,9 @@ import {
 const Contact = () => {
   return (
     <ContactContainer>
+      <Form>
+        
+      </Form>
       <ContactWrapper>
         <ContactAt>
           <CLinkContainer>

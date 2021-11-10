@@ -7,7 +7,7 @@ import {
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
-  SidebarRoute,
+  // SidebarRoute,
 } from "./Sidebar.style";
 const Sidebar = ({isOpen,toggle}) => {
   return (
@@ -17,14 +17,15 @@ const Sidebar = ({isOpen,toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={toggle} to="about">About</SidebarLink>
-          <SidebarLink onClick={toggle} to="skills">Skills</SidebarLink>
-          <SidebarLink onClick={toggle} to="project">Projects</SidebarLink>
-          <SidebarLink onClick={toggle} to="contact">Contact</SidebarLink>
+          <SidebarLink onClick={toggle} to="/">About</SidebarLink>
+          <SidebarLink onClick={toggle} to="/skills">Skills</SidebarLink>
+          <SidebarLink onClick={toggle} to="/projects">Projects</SidebarLink>
+          <SidebarLink onClick={toggle} to="/contact">Contact</SidebarLink>
+          <SidebarLink onClick={toggle} to="/resume">Resume</SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
       <SideBtnWrap>
-        <SidebarRoute to="/resume">Resume</SidebarRoute>
+        {/* <SidebarRoute to="/resume">Resume</SidebarRoute> */}
       </SideBtnWrap>
     </SidebarContainer>
   );

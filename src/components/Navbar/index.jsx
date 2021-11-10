@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  // NavBtnLink
 } from "./Navbar.style";
 const Navbar = ({toggle}) => {
   return (
@@ -22,20 +22,23 @@ const Navbar = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="/">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="skills">Skills</NavLinks>
+              <NavLinks to="/skills">Skills</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects">Projects</NavLinks>
+              <NavLinks to="/projects">Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks to="/contact">Contact</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/resume">Resume</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/resume">Resume</NavBtnLink>
+            {/* <NavBtnLink to="/resume">Resume</NavBtnLink> */}
           </NavBtn>
         </NavbarContainer>
       </Nav>
