@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from './Hero'
-import Home2 from './Home2'
+import Home2 from './Home'
 const About = () => {
     return (
         <>
