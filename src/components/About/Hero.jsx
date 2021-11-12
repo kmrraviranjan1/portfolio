@@ -2,30 +2,39 @@ import React from "react";
 import Type from "./Type";
 import {
   Container,
+  Wrapper,
   Main,
   Follow,
   Wave,
   LinkContainer,
   Icon,
+  Name,
+  Writer,
+  Greet
 } from "./About.style";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
+    <Wrapper>
+
+   
     <Container>
       <Main>
-        <h1>
+        <Greet>
           Hi There!
           <Wave role="img" aria-labelledby="wave">
             👋🏻
           </Wave>
-        </h1>
+        </Greet>
 
-        <h1 className="heading-name">
+        <Name className="heading-name">
           I'M
           <strong className="main-name"> RAVI RANJAN KUMAR</strong>
-        </h1>
-        <Type />
+        </Name>
+        <Writer>
+          <Type />
+        </Writer>
         <Follow>
           <LinkContainer>
             <Icon
@@ -45,12 +54,19 @@ const Hero = () => {
               <FaGithub color="black" />
             </Icon>
           </LinkContainer>
+          <LinkContainer>
+            <Icon
+              href="https://github.com/kmrraviranjan1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub color="black" />
+            </Icon>
+          </LinkContainer>
         </Follow>
       </Main>
-      <div>
-        <img src="assets/ravi.png" alt="" />
-      </div>
     </Container>
+    </Wrapper>
   );
 };
 

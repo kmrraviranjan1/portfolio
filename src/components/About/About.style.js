@@ -1,24 +1,67 @@
 import styled from "styled-components";
-
-
-export const Container=styled.div`
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-evenly;
+export const Wrapper = styled.div`
+/* max-width:1200px; */
+background-image: url("assets/raviFull.png");
+  background-position: 90% bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width: 1240px) {
+    
+    background-position: bottom;
+  }
+`;
+export const Container = styled.div`
+max-width:1200px;
+margin: auto;
+  display: flex;
+  align-items: flex-end;
+  height: calc(100vh - 5rem);
   
-`
 
-export const Main=styled.main`
-  display:flex;
-  flex-direction:column;
+
+  @media (max-width: 1240px) {
+    align-items:normal;
+   
+  }
+`;
+
+export const Main = styled.main`
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom:10%;
+  @media (max-width: 1240px) {
+    padding-bottom:0;
+  }
+`;
+export const Greet=styled.h6`
+  font-size: 2rem;
+  @media (max-width: 1240px) {
+    align-items:normal;
+    background-position: bottom right;
+  }
 `
-export const Follow=styled.div`
-  display:flex;
+export const Name=styled.h1`
+  font-size: 3rem;
+  @media (max-width: 1240px) {
  
+  }
 `
+export const Writer=styled.p`
+  font-size: 2rem;
+  @media (max-width: 1240px) {
+   
+  }
+`
+export const Follow = styled.div`
+  display: flex;
+  @media (max-width: 1200px) {
+    flex-direction:column;
+  }
+`;
 export const LinkContainer = styled.div`
-  margin: 1rem;
-  padding: 1rem;
+margin-top:1rem;
+  
 `;
 export const Icon = styled.a`
   margin: 1rem;

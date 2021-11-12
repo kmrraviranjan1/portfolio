@@ -2,6 +2,7 @@ import styled from "styled-components";
 export const ProjectContainer = styled.div`
   max-width: 1200px;
   margin: auto;
+  padding: 0 2rem;
 `;
 export const PageHeading = styled.div`
   height: 5rem;
@@ -11,64 +12,51 @@ export const PageHeading = styled.div`
   font-size: 2rem;
 `;
 export const ProjectWrapper = styled.div`
-    display:grid;
-  grid-template-columns:1fr;
-  /* grid-gap: 2rem;
-  justify-content: center; */
-  @media screen and (min-width: 780px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    
-  }
+  max-width: 780px;
+  margin: 0 auto;
 `;
 export const ProjectCard = styled.div`
-  display:flex;
- flex-direction:column;
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
- 
+  border: 1px solid black;
 `;
 export const ImageContainer = styled.div`
-  max-width: 100%;
   padding: 1rem;
 `;
 export const Image = styled.img`
-  border-radius:1rem;
+  border-radius: 1rem;
+  width: 100%;
 `;
 export const DescriptionWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 80%;
-
   & > div {
     margin: 0.3rem 1rem;
   }
 `;
-export const Heading = styled.div`
-  /* height:20%; */
-  font-size: 1.5rem;
+export const Heading = styled.h2`
   text-transform: uppercase;
+  text-align: center;
   font-weight: bold;
 `;
-export const Info = styled.div``;
+export const Info = styled.p`
+  margin: 0.3rem 1rem;
+`;
 export const TechWrapper = styled.div`
   display: grid;
-  justify-items: center;
+ 
   @media screen and (min-width: 420px) {
-    grid-template-columns: 1fr 1fr;
-    justify-items: normal;
+    grid-template-columns: 10rem 10rem 10rem;
   }
 `;
 export const Tech = styled.div`
-  font-size: 1.5rem;
-  padding: 0.5rem;
+  padding: 1.5rem;
   border: 1px solid blue;
   border-radius: 30px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 export const DemoWrapper = styled.div``;
 export const Demo = styled.div`
